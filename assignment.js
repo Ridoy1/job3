@@ -56,3 +56,18 @@ var total = hotelCost(20);
 console.log(total);
 
 
+
+function megaFriend(friends){
+    var largename = friends[0];
+    for (var i = 0; i < friends.length; i++){
+         var char = friends[i];
+
+         if(friends[i].length>largename.length){
+             largename = char;
+         } 
+    }
+    return largename;
+}
+var friends = ["Hridoy", "kalam", "afkdjhnfdkdsjf", "fdsffj"];
+var result = megaFriend(friends);
+console.log(result);
